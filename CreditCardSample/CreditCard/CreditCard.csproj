@@ -1,0 +1,242 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright></Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ejercicios\Seccion7_Formularios\DateAndTimePicker.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Ejercicios\Seccion7_Formularios\DateAndTimePicker.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Ejercicios\Extensions\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Pruebas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion10\DynamicResourcesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion10\GridExercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion10\MessagingCenterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion10\MessagingCenterPageTargetPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion10\ResourceDictionaryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\AbsolutePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\AbsolutePage_Code.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio3_Grid.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio4_AbsoluteLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio5_AbsoluteLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\Ejercicio6_RelativeLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\GridPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion3\RelativeLayoutEx.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\EjercicioImagenes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\ImageCircle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\LoadImageResource.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\LoadImageURI.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion4\LoadImageXAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion5\ListViewContact.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion5\ListViewContextActionEj.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion5\ListViewGroup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion5\ListViewSearch.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion5\ListViewSelection.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\ActionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Carousel\CarouselPageEjemplo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Ejercicio2\PruebaListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Ejercicio\Activities.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Ejercicio\EjercicioSeccion6.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Ejercicio\MyProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Ejercicio\UserProfile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\MasterDetailMenu\ContactDetailMenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\MasterDetailMenu\ContactMenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\MasterDetail\ContactDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\MasterDetail\ContactPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Tabs\Tab1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Tabs\TabbedPageEjemplo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\ToolBarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\WelcomeModal\IntroductionPageModal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\WelcomeModal\WelcomeModal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Welcome\IntroductionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion6_Navigation\Welcome\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion7_Formularios\Controles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion7_Formularios\PickerEj.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion7_Formularios\TableViewEj.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion7_Formularios\TextBox_Entry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion8_DataAccess\ApplicationPropertiesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ejercicios\Seccion8_DataAccess\RESTClient.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1029999" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Ejercicios\Seccion10\StylePage.xaml.cs">
+      <DependentUpon>StylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion10\ResourceDictionaryPage.xaml.cs">
+      <DependentUpon>ResourceDictionaryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion4\LoadImageURI.xaml.cs">
+      <DependentUpon>LoadImageURI.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion5\ListViewContact.xaml.cs">
+      <DependentUpon>ListViewContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion5\ListViewRefrescarPagina.xaml.cs">
+      <DependentUpon>ListViewRefrescarPagina.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion6_Navigation\ActionPage.xaml.cs">
+      <DependentUpon>ActionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion6_Navigation\Carousel\CarouselPageEjemplo.xaml.cs">
+      <DependentUpon>CarouselPageEjemplo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion6_Navigation\Ejercicio\MainPageEj6.xaml.cs">
+      <DependentUpon>MainPageEj6.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion6_Navigation\Ejercicio\UserProfile.xaml.cs">
+      <DependentUpon>UserProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion6_Navigation\Tabs\TabbedPageEjemplo.xaml.cs">
+      <DependentUpon>TabbedPageEjemplo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion7_Formularios\PickerEj.xaml.cs">
+      <DependentUpon>PickerEj.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Ejercicios\Seccion8_DataAccess\SQLLiteUsagePage.xaml.cs">
+      <DependentUpon>SQLLiteUsagePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>
