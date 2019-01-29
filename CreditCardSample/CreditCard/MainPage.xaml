@@ -4,7 +4,9 @@
              xmlns:cr="clr-namespace:CreditCard.Controls"
              x:Class="CreditCard.MainPage">
     <StackLayout>
-        <cr:CreditCardControl />
+        <Label Text="Bienvenido" />
+        <!--<cr:CreditCardControl />-->
+        <Button Text="Agregar Tarjeta" Clicked="Button_Clicked" />
     </StackLayout>
 </ContentPage>
 

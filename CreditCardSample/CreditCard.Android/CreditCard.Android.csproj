@@ -79,6 +79,8 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCreditCard.cs" />
+    <Compile Include="AddCreditCardActivity.cs" />
     <Compile Include="CreditCardActivity.cs" />
     <Compile Include="CreditCardControlAndroid.cs" />
     <Compile Include="MainActivity.cs" />

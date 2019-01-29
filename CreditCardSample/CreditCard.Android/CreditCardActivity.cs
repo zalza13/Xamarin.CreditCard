@@ -66,7 +66,6 @@ namespace CreditCard.Droid
                 {
                     Intent intent = new Intent(this, typeof(CardEditActivity));
                     StartActivityForResult(intent, CREATE_NEW_CARD);
-
                 }
             });
         }
