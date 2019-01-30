@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:cr="clr-namespace:CreditCard.Controls"
              x:Class="CreditCard.MainPage">
     <StackLayout>
-        <Label Text="Bienvenido" />
-        <!--<cr:CreditCardControl />-->
+        <Label Text="Welcome to Credit Card Xamarin" />
+        <Label x:Name="CCName" />
+        <Label x:Name="CCNumber" />
+        <Label x:Name="CCExpiry" />
+        <Label x:Name="CCCVV" />
         <Button Text="Agregar Tarjeta" Clicked="Button_Clicked" />
     </StackLayout>
 </ContentPage>

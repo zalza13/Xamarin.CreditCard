@@ -9,17 +9,6 @@ namespace CreditCard.Droid
     [Activity(Label = "AddCreditCardActivity", MainLauncher = false)]
     public class AddCreditCardActivity : Activity
     {
-        /// <summary>
-        /// Credit Card Data
-        /// </summary>
-        public class CreditCardData
-        {
-            public string Name { get; set; }
-            public string Number { get; set; }
-            public string Expiry { get; set; }
-            public string CVV { get; set; }
-        }
-
         private readonly int CREATE_NEW_CARD = 0;
         public static EventHandler AddCreditCardResultHandler;
         public CreditCardData CreditCardRawData { get; set; }
