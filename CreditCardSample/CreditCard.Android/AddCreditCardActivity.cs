@@ -1,8 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Views;
-using Android.Widget;
 using Com.Cooltechworks.Creditcarddesign;
 using System;
 
@@ -11,7 +9,20 @@ namespace CreditCard.Droid
     [Activity(Label = "AddCreditCardActivity", MainLauncher = false)]
     public class AddCreditCardActivity : Activity
     {
+        /// <summary>
+        /// Credit Card Data
+        /// </summary>
+        public class CreditCardData
+        {
+            public string Name { get; set; }
+            public string Number { get; set; }
+            public string Expiry { get; set; }
+            public string CVV { get; set; }
+        }
+
         private readonly int CREATE_NEW_CARD = 0;
+        public static EventHandler AddCreditCardResultHandler;
+        public CreditCardData CreditCardRawData { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,9 +40,20 @@ namespace CreditCard.Droid
                 string cardNumber = data.GetStringExtra(CreditCardUtils.ExtraCardNumber);
                 string expiry = data.GetStringExtra(CreditCardUtils.ExtraCardExpiry);
                 string cvv = data.GetStringExtra(CreditCardUtils.ExtraCardCvv);
-            }
 
-            Finish();
+                //TODO: Validate data
+
+                CreditCardRawData = new CreditCardData()
+                {
+                    Name = name,
+                    Number = cardNumber,
+                    Expiry = expiry,
+                    CVV = cvv
+                };
+
+                AddCreditCardResultHandler?.Invoke(this, null);
+                Finish();
+            }
         }
     }
 }
